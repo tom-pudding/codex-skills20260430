@@ -22,5 +22,6 @@ Rules:
 - No clutter
 - One screen = one purpose
 - Clear primary action
+- Do not introduce extra states, controls, or flows beyond the agreed scope
 
 Do not write code.

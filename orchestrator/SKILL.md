@@ -21,6 +21,10 @@ Rules:
 - Do not implement everything at once
 - Use security before any task involving Git commits, GitHub push, API keys, `.env` files, credentials, authenticated external APIs, sending user or sensitive data to external services, destructive commands, file deletion, permissions, or overwriting/removing existing config files.
 - Treat security as a required review gate for those tasks before implementation or execution.
+- Before any destructive or external action, require `security`.
+- Do not proceed from `implement` to `review` without `test`, unless the limitation is explicitly documented.
+- If test coverage is partial, route to `review` only with clear unknowns and limitations.
+- Before commit or push, require a `security` check of the exact pending changes.
 
 Control:
 - Ask for clarification if goal is unclear

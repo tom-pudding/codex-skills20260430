@@ -23,6 +23,9 @@ Rules:
 - If tests are missing, use existing commands, manual verification steps, or lightweight runtime checks
 - If a failure suggests missing functionality, report it; do not fix it in test mode
 - Only make non-functional test-related adjustments if explicitly requested in a separate implementation step
+- Do not mark behavior as verified unless at least one real execution path was observed
+- If testing depends on manual steps or environment limitations, state the limitation explicitly in RESULT
+- Do not rewrite code, test fixtures, or app logic during test mode
 
 What to verify:
 - Primary user-facing behavior in the agreed scope

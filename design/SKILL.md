@@ -18,6 +18,8 @@ Include:
 - Structure: screens, modules, or files
 - Smallest MVP
 - Step-by-step plan
+- Operations that may require `security` later
 
 Stop before writing code.
+- Mark unknowns explicitly instead of assuming defaults for destructive, external, or sensitive behavior.
 Ask for user agreement before implementation.
